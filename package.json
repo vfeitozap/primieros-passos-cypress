@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/xvfb": "^1.2.4",
     "cypress": "^14.2.1"
   },
   "dependencies": {
@@ -175,5 +176,13 @@
     "wrappy": "^1.0.2",
     "yauzl": "^2.10.0"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vfeitozap/primieros-passos-cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vfeitozap/primieros-passos-cypress/issues"
+  },
+  "homepage": "https://github.com/vfeitozap/primieros-passos-cypress#readme"
 }
