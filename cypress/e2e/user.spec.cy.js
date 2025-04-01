@@ -17,7 +17,7 @@ describe('Orange HRM Specs', () => {
     genericField: ".oxd-input--active",
     dateField: "[placeholder='yyyy-dd-mm']",
     dateCloseButton: ".--close",
-    selectField: ".oxd-select-text--active",
+    selectField: ".oxd-select-text-input",
     submitButton: ".orangehrm-left-space",
   }
  
@@ -66,6 +66,8 @@ describe('Orange HRM Specs', () => {
     cy.get(selectorList.genericField).eq(5).clear().type("001200340044005")
     cy.get(selectorList.dateField).eq(0).clear().type("2029-3-20")
     cy.get(selectorList.dateCloseButton).click()
+    cy.get(selectorList.selectField).eq(0).click().type("Arg").click()
+    cy.get(selectorList.selectField).eq(1).click().type("m").click()
     cy.get(selectorList.submitButton).eq(0).click()
     cy.get('.oxd-toast-close')
   })
