@@ -12,31 +12,7 @@ const personalPage = new MenuPage()
 
 describe('Orange HRM Specs', () => {
   
-
-  
-  it('login-success', () => {
-    loginPage.accessLoginPage()
-    loginPage.loginWithAnyUser(userData.userSuccess.username, userData.userSuccess.password)
-    dashcCheck.dashboardCheck()
-  })
-  it('login-fail', () => {
-    loginPage.accessLoginPage()
-    loginPage.loginWithAnyUser(userData.userFail.username, userData.userFail.password)
-    loginPage.wrongCredentials()
-   
-  })
-  it('login-Username Fail', () => {
-    loginPage.accessLoginPage()
-    loginPage.loginWithAnyUser(userData.userFail.username, userData.userSuccess.password)
-    loginPage.wrongCredentials()
-  })
-  it('login-Password Fail', () => {
-    cy.visit('/auth/login')
-    loginPage.accessLoginPage()
-    loginPage.loginWithAnyUser(userData.userSuccess.username, userData.userFail.password)
-    loginPage.wrongCredentials()
-  })
-  it.only('User Info Update - Success', () => {
+  it('User Info Update - Success', () => {
     loginPage.accessLoginPage()
     loginPage.loginWithAnyUser(userData.userSuccess.username, userData.userSuccess.password)
     dashcCheck.dashboardCheck()
