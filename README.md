@@ -14,11 +14,11 @@ npm install
 >It`s necessary to have **node** installed
 
 ## Running
-#You open the Cyoress UI
+# You open the Cyoress UI
 ```bash
 npx cypress open
 ````
-#Run the automation by command line
+# Run the automation by command line
 ```bash
 npx cypress run
 ````
