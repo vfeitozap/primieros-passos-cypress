@@ -27,7 +27,7 @@ class InfoPage {
         cy.get(this.infoPageSelectors().genericField).eq(3).clear().type(userId)
         cy.get(this.infoPageSelectors().genericField).eq(4).clear().type(otherId)
         cy.get(this.infoPageSelectors().genericField).eq(5).clear().type(driversLicense)
-        cy.get(this.infoPageSelectors().dateField).eq(0).clear().type(dateOfBirth)
+        cy.get(this.infoPageSelectors().genericField).eq(7).clear().type(dateOfBirth)
         cy.get(this.infoPageSelectors().dateCloseButton).click()
         cy.get(this.infoPageSelectors().selectField).eq(0).click()
         cy.get('.oxd-select-dropdown > :nth-child(4)').click()
