@@ -2,7 +2,7 @@ class DashboardPage {
 
     dashboardSelectors() {
         const selectors = {
-            dashboardGrid: '.orangehrm-dashboard-grid'
+            dashboardGrid: ".oxd-layout-context"
         }
         return selectors
 

@@ -10,7 +10,7 @@ const dashcCheck = new DashboardPage()
 const infoEmployee = new myInfoPage()
 const personalPage = new MenuPage()
 
-describe('Orange HRM Specs', () => {
+describe('Orange HRM Login Tests', () => {
   
   it('Login - Success', () => {
     loginPage.accessLoginPage()
